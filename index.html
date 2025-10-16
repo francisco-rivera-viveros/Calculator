@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://help.apple.com/assets/63FD49E28D6264536445EC7D/63FD49E28D6264536445EC84/es_419/f19c7e914f0adb59c0833d00d09f1ea7.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body onkeydown="teclado(event)">
+    <audio id="clickSound">
+        <source src="clickc.mp3 " type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>    
+    <div class="container">
+        <h1 id="label"> </h1>
+        <h1 id="display"> </h1>
+        <div class="teclado">
+            <button onclick="escribirNumero(1)">1</button>
+            <button id="j" onclick="escribirNumero(2)">2</button>
+            <button onclick="escribirNumero(3)">3</button>
+            <button onclick="escribirNumero(4)">4</button>
+            <button onclick="escribirNumero(5)">5</button>
+            <button class="naranja" onclick="sumar()">+</button>
+            <button onclick="escribirNumero(6)">6</button>
+            <button onclick="escribirNumero(7)">7</button>
+            <button class="naranja" onclick="restar()">-</button>
+            <button onclick="escribirNumero(8)">8</button>
+            <button onclick="escribirNumero(9)">9</button>
+            <!-- <button onclick="dividir()" >÷</button> -->
+            <button class="naranja" onclick="igual()" >=</button>
+            <!-- <button onclick="multiplicar()">x</button> -->
+            <button onclick="back()">🠔</button>
+            <button onclick="escribirNumero(0)">0</button>
+            <button class="naranja" onclick="del()">Del</button>
+        </div>
+    </div>
+    <script src="j.js"></script>
+</body>
+</html>

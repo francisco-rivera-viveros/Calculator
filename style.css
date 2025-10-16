@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Estándar */
+    background-color: rgb(4, 4, 35);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(4, 4, 35);
+}
+
+h1{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+#label{
+    color: rgba(255, 255, 255, 0.491);
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.teclado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-template-rows: auto; /* Las filas se ajustarán automáticamente */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 10px; /* Espacio alrededor de la cuadrícula */
+}
+
+.teclado button{
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(0.45turn, rgba(255, 255, 255, 0.4), 30%,rgba(255, 255, 255, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+
+.teclado button:active{
+    background: linear-gradient(0.45turn, rgba(255, 255, 255, 0.1), 30%,rgba(255, 255, 255, 0.4));
+}
+
+.teclado button.naranja{
+    background-color: rgba(255, 166, 0, 0.884); /* Usa background-color */
+}
